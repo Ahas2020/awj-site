@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWJ · العرض الحي</title>
+<meta name="description" content="غرفة عمليات السمعة: مؤشرات، تدفّق إشارات لحظي، وتنبيهات مرتّبة حسب الأثر.">
+<link rel="icon" href="assets/img/awj-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Reem+Kufi:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/awj.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/awj-mark.svg" alt=""><span class="wm">A<b>W</b>J</span></a>
+    <nav class="nav-links">
+      <a href="platform.html" data-i18n="nav.platform">المنصة</a>
+      <a href="pricing.html" data-i18n="nav.pricing">الباقات</a>
+      <a href="trust.html" data-i18n="nav.trust">الأخلاقيات</a>
+      <a href="dashboard.html" aria-current="page" data-i18n="nav.demo">العرض الحي</a>
+      <a href="contact.html" data-i18n="nav.contact">تواصل</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang" role="group" aria-label="language">
+        <button data-lang="ar" aria-pressed="true">ع</button>
+        <button data-lang="fr" aria-pressed="false">FR</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="cta.start">ابدأ الآن</a>
+    </div>
+    <button class="menu-toggle" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:24px">
+  <div class="container">
+    <span class="eyebrow" data-i18n="demo.eyebrow">العرض الحي</span>
+    <h1 style="font-size:clamp(2rem,4.5vw,3.2rem);margin:16px 0 14px" data-i18n="demo.title">غرفة عمليات سمعتك.</h1>
+    <p class="lead" data-i18n="demo.lead"></p>
+
+    <div class="tryit" style="max-width:560px">
+      <label data-i18n="demo.try">جرّب: اكتب اسماً أو علامة تجارية</label>
+      <div class="row">
+        <input id="demoInput" type="text" data-i18n-ph="demo.try" placeholder="اكتب اسماً…">
+        <button id="demoRun" class="btn btn-primary" data-i18n="demo.run">حلّل السمعة</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:16px">
+  <div class="container">
+    <div class="dash reveal">
+      <div class="dash-top">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <span class="pill" style="margin-inline-start:auto">AWJ · live</span>
+      </div>
+      <div class="dash-body">
+        <div class="dash-main">
+          <div class="kpis">
+            <div class="kpi pos"><div class="n" id="kpiPos">62%</div><div class="l" data-i18n="demo.k1">إيجابي</div></div>
+            <div class="kpi neg"><div class="n" id="kpiNeg">11%</div><div class="l" data-i18n="demo.k2">سلبي</div></div>
+            <div class="kpi neu"><div class="n" id="kpiNeu">27%</div><div class="l" data-i18n="demo.k3">محايد</div></div>
+          </div>
+          <div class="bars" id="demoBars"></div>
+        </div>
+        <div class="dash-side">
+          <h3 style="font-family:var(--ff-body);font-size:1.05rem;margin-bottom:14px" data-i18n="demo.feedtitle">تدفّق الإشارات</h3>
+          <div class="feed" id="demoFeed"></div>
+        </div>
+      </div>
+    </div>
+    <p class="pricing-note" data-i18n="demo.note"></p>
+
+    <div class="center mt-l">
+      <a href="pricing.html" class="btn btn-cyan" data-i18n="cta.book">احجز عرضاً</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-bottom" style="border:none;margin:0;padding:0">
+      <span data-i18n="foot.rights">© 2026 الأوج.</span>
+      <span data-i18n="foot.made">صُمّم بالعربية أولاً.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/awj.js"></script>
+</body>
+</html>

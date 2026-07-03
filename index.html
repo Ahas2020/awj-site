@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWJ · أوج — ذكاء السمعة الرقمية</title>
+<meta name="description" content="منصة ذكاء اصطناعي لإدارة وحماية السمعة الرقمية للأفراد والشركات والكيانات — رصد، تقارير، تنبيهات، ودفاع مشروع بالعربية وكل اللغات.">
+<link rel="icon" href="assets/img/awj-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Reem+Kufi:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/awj.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/awj-mark.svg" alt="">
+      <span class="wm">A<b>W</b>J</span>
+    </a>
+    <nav class="nav-links">
+      <a href="platform.html" data-i18n="nav.platform">المنصة</a>
+      <a href="pricing.html" data-i18n="nav.pricing">الباقات</a>
+      <a href="trust.html" data-i18n="nav.trust">الأخلاقيات</a>
+      <a href="dashboard.html" data-i18n="nav.demo">العرض الحي</a>
+      <a href="contact.html" data-i18n="nav.contact">تواصل</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang" role="group" aria-label="language">
+        <button data-lang="ar" aria-pressed="true">ع</button>
+        <button data-lang="fr" aria-pressed="false">FR</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="cta.start">ابدأ الآن</a>
+    </div>
+    <button class="menu-toggle" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow" data-i18n="hero.eyebrow">ذكاء السمعة الرقمية</span>
+      <h1 data-i18n="hero.title">سمعتك في <span class="gold">الأوج</span>.<br>ومحميّة على مدار الساعة.</h1>
+      <p class="lead" data-i18n="hero.lead">منصة ذكاء اصطناعي ترصد كل ما يُقال عنك…</p>
+      <div class="hero-cta">
+        <a href="dashboard.html" class="btn btn-primary" data-i18n="cta.demo">شاهد المنصة</a>
+        <a href="pricing.html" class="btn btn-ghost" data-i18n="cta.book">احجز عرضاً</a>
+      </div>
+      <div class="hero-meta">
+        <div><b data-i18n="hero.m1v">+180</b><span data-i18n="hero.m1">مصدر مُراقَب</span></div>
+        <div><b data-i18n="hero.m2v">12</b><span data-i18n="hero.m2">لغة</span></div>
+        <div><b data-i18n="hero.m3v">لحظي</b><span data-i18n="hero.m3">زمن الرصد</span></div>
+      </div>
+    </div>
+
+    <!-- SIGNATURE: reputation radar -->
+    <div class="radar" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <defs>
+          <radialGradient id="rg" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(95,230,217,.14)"/>
+            <stop offset="100%" stop-color="rgba(95,230,217,0)"/>
+          </radialGradient>
+          <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="rgba(230,180,80,.0)"/>
+            <stop offset="100%" stop-color="rgba(230,180,80,.55)"/>
+          </linearGradient>
+        </defs>
+        <circle cx="200" cy="200" r="190" fill="url(#rg)"/>
+        <circle cx="200" cy="200" r="150" fill="none" stroke="#26304C" stroke-width="1"/>
+        <circle cx="200" cy="200" r="100" fill="none" stroke="#26304C" stroke-width="1"/>
+        <circle cx="200" cy="200" r="50" fill="none" stroke="#26304C" stroke-width="1"/>
+        <line x1="200" y1="10" x2="200" y2="390" stroke="#1B2338" stroke-width="1"/>
+        <line x1="10" y1="200" x2="390" y2="200" stroke="#1B2338" stroke-width="1"/>
+        <!-- sweep -->
+        <g class="sweep">
+          <path d="M200 200 L200 12 A188 188 0 0 1 360 120 Z" fill="url(#sw)"/>
+          <line x1="200" y1="200" x2="200" y2="12" stroke="var(--gold)" stroke-width="2"/>
+        </g>
+        <!-- central identity node -->
+        <circle cx="200" cy="200" r="13" fill="var(--gold)"/>
+        <circle cx="200" cy="200" r="20" fill="none" stroke="var(--gold-soft)" stroke-width="1.5" opacity=".5"/>
+        <!-- mention blips -->
+        <circle class="blip" cx="285" cy="130" r="6" fill="var(--gold)"    style="animation-delay:.2s"/>
+        <circle class="blip" cx="120" cy="150" r="5" fill="var(--cyan)"    style="animation-delay:1.6s"/>
+        <circle class="blip" cx="150" cy="290" r="6" fill="var(--crimson)" style="animation-delay:3s"/>
+        <circle class="blip" cx="300" cy="270" r="5" fill="var(--cyan)"    style="animation-delay:4.2s"/>
+        <circle class="blip" cx="240" cy="95"  r="4" fill="var(--gold)"    style="animation-delay:2.4s"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- FOUR LAYERS -->
+<section class="section" id="layers">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="layers.eyebrow">البنية</span>
+      <h2 data-i18n="layers.title">أربع طبقات. نظام واحد لا يهدأ.</h2>
+      <p class="lead" data-i18n="layers.lead">من الرصد إلى الدفاع…</p>
+    </div>
+    <div class="layers">
+      <article class="layer reveal">
+        <div class="ic">📡</div><span class="idx">01</span>
+        <h3 data-i18n="l1.t">الرصد</h3><p data-i18n="l1.d"></p>
+      </article>
+      <article class="layer reveal" style="transition-delay:.08s">
+        <div class="ic">📊</div><span class="idx">02</span>
+        <h3 data-i18n="l2.t">التقارير</h3><p data-i18n="l2.d"></p>
+      </article>
+      <article class="layer reveal" style="transition-delay:.16s">
+        <div class="ic">🔔</div><span class="idx">03</span>
+        <h3 data-i18n="l3.t">التنبيهات</h3><p data-i18n="l3.d"></p>
+      </article>
+      <article class="layer reveal" style="transition-delay:.24s">
+        <div class="ic">🛡️</div><span class="idx">04</span>
+        <h3 data-i18n="l4.t">الحلول والدفاع</h3><p data-i18n="l4.d"></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- AGENTS -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="agents.eyebrow">وكلاء الأوج</span>
+      <h2 data-i18n="agents.title">سربٌ من الوكلاء، لكل مهمّته.</h2>
+    </div>
+    <div class="agents reveal">
+      <div class="agent"><div class="dot"></div><h4 data-i18n="a1.t">الراصد</h4><p data-i18n="a1.d"></p></div>
+      <div class="agent"><div class="dot"></div><h4 data-i18n="a2.t">المحلّل</h4><p data-i18n="a2.d"></p></div>
+      <div class="agent"><div class="dot"></div><h4 data-i18n="a3.t">الحارس</h4><p data-i18n="a3.d"></p></div>
+      <div class="agent"><div class="dot"></div><h4 data-i18n="a4.t">الاستراتيجي</h4><p data-i18n="a4.d"></p></div>
+      <div class="agent"><div class="dot"></div><h4 data-i18n="a5.t">المُستجيب</h4><p data-i18n="a5.d"></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="why.eyebrow">لماذا الأوج</span>
+      <h2 data-i18n="why.title">مبنيّ ليتفوّق، لا ليُقلَّد.</h2>
+      <p class="lead mt-s" data-i18n="why.lead"></p>
+    </div>
+    <div class="panel-card reveal">
+      <ul class="checklist">
+        <li><span class="tick">✓</span><span data-i18n="why.i1"></span></li>
+        <li><span class="tick">✓</span><span data-i18n="why.i2"></span></li>
+        <li><span class="tick">✓</span><span data-i18n="why.i3"></span></li>
+        <li><span class="tick">✓</span><span data-i18n="why.i4"></span></li>
+        <li><span class="tick">✓</span><span data-i18n="why.i5"></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2 data-i18n="cta.title">سمعتك تُكتب الآن على الإنترنت. من يكتبها؟</h2>
+      <p class="lead" style="margin-inline:auto" data-i18n="cta.sub"></p>
+      <a href="contact.html" class="btn btn-primary" data-i18n="cta.start">ابدأ الآن</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/awj-mark.svg" alt="" style="width:30px"><span class="wm">A<b>W</b>J</span></a>
+        <p class="mt-s" style="max-width:34ch" data-i18n="foot.tag"></p>
+      </div>
+      <div>
+        <h5 data-i18n="foot.product">المنتج</h5>
+        <a href="platform.html" data-i18n="nav.platform">المنصة</a>
+        <a href="dashboard.html" data-i18n="nav.demo">العرض الحي</a>
+        <a href="pricing.html" data-i18n="nav.pricing">الباقات</a>
+      </div>
+      <div>
+        <h5 data-i18n="foot.company">الشركة</h5>
+        <a href="trust.html" data-i18n="nav.trust">الأخلاقيات</a>
+        <a href="contact.html" data-i18n="nav.contact">تواصل</a>
+      </div>
+      <div>
+        <h5 data-i18n="foot.legal">قانوني</h5>
+        <a href="trust.html" data-i18n="do.t">ما نفعله</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.rights">© 2026 الأوج.</span>
+      <span data-i18n="foot.made">صُمّم بالعربية أولاً.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/awj.js"></script>
+</body>
+</html>

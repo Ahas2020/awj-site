@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWJ · تواصل</title>
+<meta name="description" content="اطلب تحليلاً أوّلياً مجانياً لسمعتك الرقمية خلال ٤٨ ساعة.">
+<link rel="icon" href="assets/img/awj-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Reem+Kufi:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/awj.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/awj-mark.svg" alt=""><span class="wm">A<b>W</b>J</span></a>
+    <nav class="nav-links">
+      <a href="platform.html" data-i18n="nav.platform">المنصة</a>
+      <a href="pricing.html" data-i18n="nav.pricing">الباقات</a>
+      <a href="trust.html" data-i18n="nav.trust">الأخلاقيات</a>
+      <a href="dashboard.html" data-i18n="nav.demo">العرض الحي</a>
+      <a href="contact.html" aria-current="page" data-i18n="nav.contact">تواصل</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang" role="group" aria-label="language">
+        <button data-lang="ar" aria-pressed="true">ع</button>
+        <button data-lang="fr" aria-pressed="false">FR</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <button class="menu-toggle" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:32px">
+  <div class="container split" style="align-items:start">
+    <div>
+      <span class="eyebrow" data-i18n="contact.eyebrow">تواصل</span>
+      <h1 style="font-size:clamp(2rem,4.5vw,3.2rem);margin:16px 0 16px" data-i18n="contact.title">لنؤمّن سمعتك.</h1>
+      <p class="lead" data-i18n="contact.lead"></p>
+    </div>
+
+    <div class="panel-card">
+      <div class="form">
+        <div class="field">
+          <label data-i18n="f.name">الاسم الكامل</label>
+          <input type="text" data-i18n-ph="f.name" placeholder="الاسم">
+        </div>
+        <div class="field">
+          <label data-i18n="f.email">البريد الإلكتروني</label>
+          <input type="email" data-i18n-ph="f.email" placeholder="you@email.com">
+        </div>
+        <div class="field">
+          <label data-i18n="f.type">نوع الحساب</label>
+          <select>
+            <option data-i18n="f.opt1">فرد</option>
+            <option data-i18n="f.opt2">شركة</option>
+            <option data-i18n="f.opt3">كيان سياسي</option>
+          </select>
+        </div>
+        <div class="field">
+          <label data-i18n="f.msg">ما الذي تريد حمايته؟</label>
+          <textarea rows="4" data-i18n-ph="f.msg" placeholder="..."></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" style="justify-content:center" data-i18n="f.send">أرسِل الطلب</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-bottom" style="border:none;margin:0;padding:0">
+      <span data-i18n="foot.rights">© 2026 الأوج.</span>
+      <span data-i18n="foot.made">صُمّم بالعربية أولاً.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/awj.js"></script>
+</body>
+</html>
