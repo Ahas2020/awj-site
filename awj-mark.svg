@@ -1,0 +1,35 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AWJ">
+  <defs>
+    <linearGradient id="awjGold" x1="0" y1="120" x2="120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C98A2B"/>
+      <stop offset="0.55" stop-color="#E6B450"/>
+      <stop offset="1" stop-color="#F6D98A"/>
+    </linearGradient>
+    <linearGradient id="awjCyan" x1="20" y1="100" x2="100" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2AA79B"/>
+      <stop offset="1" stop-color="#5FE6D9"/>
+    </linearGradient>
+    <radialGradient id="awjApex" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#FFF3D6"/>
+      <stop offset="1" stop-color="#E6B450"/>
+    </radialGradient>
+  </defs>
+
+  <!-- orbit / observation rings -->
+  <path d="M14 92 A 58 58 0 0 1 106 92" stroke="#2A3350" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M26 92 A 44 44 0 0 1 94 92" stroke="#2A3350" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- rising apogee arc (the ascent to the zenith) -->
+  <path d="M18 96 C 30 46, 78 30, 100 78" stroke="url(#awjCyan)" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <!-- main ascending stroke forming the peak -->
+  <path d="M22 98 C 40 42, 60 22, 60 20 C 60 22, 80 52, 98 96" stroke="url(#awjGold)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- mention nodes on the sweep -->
+  <circle cx="34" cy="70" r="3.2" fill="#E6B450"/>
+  <circle cx="84" cy="72" r="3.2" fill="#5FE6D9"/>
+  <circle cx="47" cy="46" r="2.6" fill="#8A93A8"/>
+
+  <!-- the zenith / apex node -->
+  <circle cx="60" cy="20" r="9" fill="url(#awjApex)"/>
+  <circle cx="60" cy="20" r="9" stroke="#F6D98A" stroke-width="1.5" fill="none" opacity="0.6"/>
+</svg>
